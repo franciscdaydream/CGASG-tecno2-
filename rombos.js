@@ -10,7 +10,7 @@ class rombos{
     push();
     translate(43,63);
     noStroke();
-    fill(0,0,100);
+    fill(0,0,random([0,100]));
     quad(this.x,this.y,this.x+this.ancho,this.y-this.ancho,this.x+this.ancho*2,this.y,this.x+this.ancho,this.y+this.ancho);
     pop();
   }
