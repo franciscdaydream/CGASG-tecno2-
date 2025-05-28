@@ -23,13 +23,20 @@ function draw() {
    cuadro = [];
    rombo = [];
 
-  for (let x = 0; x < anchocuadros*16; x += anchocuadros) {
-    for (let y = 0; y < anchocuadros*8; y += anchocuadros) {
-      cuadro[x] = new cuadros(x, y);
-      cuadro[x].dibujar();
+  
+  for (let x1 = 0; x1 < anchocuadros*16; x1 += anchocuadros) {
+    for (let y1 = 0; y1 < anchocuadros*8; y1 += anchocuadros*2) {
+      cuadro[x1] = new cuadros(x1, y1);
+      cuadro[x1].dibujar();
     }
   }
 
+    for (let x2 = anchocuadros*7; x2 > anchocuadros*-16; x2 -= anchocuadros) {
+    for (let y2 = anchocuadros; y2 < anchocuadros*8; y2 += anchocuadros*2) {
+      cuadro[x2] = new cuadros(x2, y2);
+      cuadro[x2].dibujar();
+    }
+  }
   for (let x = anchocuadros-anchocuadros/3; x < anchocuadros*8; x += anchocuadros*2) {
     for (let y = anchocuadros-anchocuadros/3; y < anchocuadros*8; y += anchocuadros*2) {
   
