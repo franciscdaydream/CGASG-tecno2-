@@ -4,6 +4,9 @@ function setup() {
   createCanvas(400, 400);
   colorMode(HSB, 360, 100,100);
   angleMode(DEGREES)
+  /*quitar despues, solo para pruebas*/
+  frameRate(1);
+  /*quitar despues, solo para pruebas*/
 }
 
 function marcos(color,saturacion,brillo,grosor){
